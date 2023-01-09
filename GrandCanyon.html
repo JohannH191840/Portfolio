@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrandCanyon</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( document ).tooltip();
+    } );
+
+    $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+
+    </script>
+  
+      
+  
+ 
+
+    <style>
+
+         label {
+      display: inline-block;
+      width: 5em;
+    }
+.Govdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px;
+           
+        }
+
+        .Government{
+            position: relative;
+            display: inline-block;           
+        }
+
+        .Gov-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 235px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);          
+        }
+
+        .Gov-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px;            
+        }
+
+        .Gov-content a:hover { background-color: #f1f1f1;}
+
+        .Government:hover .Gov-content {
+            display: block;
+        }
+        
+        .Government:hover .Govdrop{
+            background-color: Gray;
+        }
+       
+
+
+        .Resdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px; 
+                     
+        }
+
+        .Residents{
+            position: relative;
+            display: inline-block;        
+        }
+
+        .Res-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 235px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);     
+            
+        }
+
+        .Res-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px; 
+        }
+
+        .Res-content a:hover { background-color: #f1f1f1;}
+
+        .Residents:hover .Res-content{
+            display: block;
+        }
+
+        .Residents:hover .Resdrop{
+            background-color: gray;
+        }
+
+
+
+        .Busdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px;  
+        }
+
+        .Business{
+            position: relative;
+            display: inline-block;  
+        }
+
+        .Bus-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 235px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+        }
+
+        .Bus-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px; 
+        }
+
+        .Bus-content a:hover { background-color: #f1f1f1;}
+
+        .Business:hover .Bus-content{
+            display: block;
+        }
+
+        .Business:hover .Busdrop{
+            background-color: gray;
+        }
+
+
+
+        .knowdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px;  
+        }
+
+        .Know{
+        position: relative;
+            display: inline-block;  
+        }
+
+        .know-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 235px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+            
+        }
+
+        .know-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px; 
+            
+        }
+
+        .know-content a:hover { background-color: #f1f1f1;}
+
+        .Know:hover .know-content{
+            display: block;
+        }
+
+        .Know:hover .knowdrop{
+            background-color: gray;
+        }
+
+        .enterdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px;  
+        }
+
+        .enter{
+        position: relative;
+            display: inline-block;  
+        }
+
+        .enter-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 235px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+        }
+
+        .enter-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px; 
+            
+        }
+
+        .enter-content a:hover { background-color: #f1f1f1;}
+
+        .enter:hover .enter-content{
+            display: block;
+        }
+
+        .enter:hover .enterdrop{
+            background-color: gray;
+        }
+
+        .home{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px; 
+        }
+        .anchor{
+            text-decoration: none;
+            color: white;
+        }
+
+        .pic{
+            background-image: url('Grandcanyonn.jpg');
+            background-repeat: no-repeat; 
+            width: 100%;
+            height: 820px;
+            background-size: 100%;
+            
+        }
+
+        .info{
+            margin-top: 750px;
+            color: black;
+            font-size: 40px;
+            margin-left: 100px;
+        }
+
+        .infoo{
+            font-size: 20px;
+            margin-left: 150px;
+            margin-right: 300px;
+            margin-top: 40px;
+        }
+
+        .pic1{
+            
+            width: 300px;
+            height: 200px;
+            border-radius: 10%;
+            margin-top: 50px;
+            margin-left: 50px;
+            position: absolute;
+            background-image: url('South.png');
+            
+            
+        }
+
+        .pic2{
+            
+            width: 300px;
+            height: 200px;
+            border-radius: 10%;
+            margin-top: 50px;
+            margin-left: 400px;
+            position: absolute;
+            background-image: url('west.jpg');
+        }
+
+        .pic3{
+            background-image: url('east.png');
+            width: 300px;
+            height: 200px;
+            border-radius: 10%;
+            margin-top: 50px;
+            margin-left: 750px;
+            position: absolute;
+        }
+
+        .pic4{
+            background-image: url('North.jpg');
+            width: 300px;
+            height: 200px;
+            border-radius: 10%;
+            margin-top: 50px;
+            margin-left: 1100px;
+            position: absolute;
+        }
+
+        p{
+            margin-top: 130px;
+            font-size: 25px;
+            border-radius: 50%;
+            background-color: rgb(127, 86, 39);
+            width: 200px;
+            height: 30px;
+            padding: 10px;
+            text-align: center;
+            margin-left: 40px;
+            transition: width 2s, height 2s, font-size 2s, margin-left 2s, margin-top 2s;
+        }
+
+        p:hover{
+            width: 100px;
+            height: 15px;
+            margin-left: 90px;
+            margin-top: 130px;
+            font-size: 15px;
+        }
+
+        .pic5{
+            background-color: red;
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            border: 5px solid black;
+            margin-top: 300px;
+            margin-left: 300px;
+        }
+
+        .pic6{
+            position: absolute;
+            background-color: green;
+            width: 300px;
+            height: 300px;
+            margin-left: 856px;
+            margin-top: 300px;
+            border: 5px solid black;
+        }
+
+        .pic7{
+            position: absolute;
+            background-color: green;
+            width: 300px;
+            height: 300px;
+            margin-left: 856px;
+            margin-top: 600px;
+            border: 5px solid black;
+        }
+
+        .pic8{
+            position: absolute;
+            background-color: green;
+            width: 300px;
+            height: 300px;
+            margin-left: 300px;
+            margin-top: 906px;
+            border: 5px solid black;
+        }
+
+        .pic9{
+            position: absolute;
+            background-color: green;
+            width: 300px;
+            height: 300px;
+            margin-left: 300px;
+            margin-top: 1206px;
+            border: 5px solid black; 
+        }
+
+        .pic10{
+            position: absolute;
+            background-color: green;
+            width: 550px;
+            height: 600px;
+            margin-left: 606px;
+            margin-top: 906px;
+            border: 5px solid black;
+        }
+
+        .content{
+            background-color: rgb(162, 103, 14);
+            color: white;
+            width: 100%;
+            height: 300px;
+            margin-top: 1650px;
+            border: solid black;
+        }
+
+        .Viscenter{
+            margin-left: 150px;
+            margin-top: 60px;
+            position: absolute;
+            color: black;
+            font-size: 20px;
+        
+        }
+
+        ul{
+            color: white;
+        }
+
+        .flag365{
+            position: absolute;
+            margin-left: 650px;
+            margin-top: 40px;
+            color: black;
+            font-size: 20px;
+            
+        }
+
+        #Email{
+            width: 200px;
+            height: 50px;
+            background-color: #f1f1f1;
+            text-align: center;
+            font-size: 20px;
+            margin-left: 0;
+            margin-top: 140px;
+            position: absolute;
+        }
+
+        #sub{
+            width: 150px;
+            height: 57px;
+            background-color: rgb(93, 163, 210);
+            margin-left: 205px;
+            margin-top: 140px;
+            position: absolute;
+        }
+
+        iframe{
+            margin-left: 1134px;
+        }
+
+        .cal{
+            
+            font-size: 25px;
+            margin-top: 80px;
+            margin-left: 0px;
+            position: absolute;
+        }
+
+        #datepicker{
+            margin-left: -57px;
+            margin-top: 30px;
+            position: absolute;
+        }
+
+        #fname{
+            position: absolute;
+            margin-top: 40px;
+            margin-left: -199px;
+        }
+
+        #Lname{
+            position: absolute;
+            margin-top: 70px;
+            margin-left: -199px;
+        }
+
+        
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="pic">
+
+    <button class="home">
+        <a class="anchor" href="./Flagstaff.html">Home</a>
+</button>
+    <div class="Government">
+        <button class="Govdrop"> Government</button>
+        <div class="Gov-content">
+            <a href="./Government.html">Government</a>
+            <a href="./Minwage.html">Minimum Wage</a>
+            <a href="#">Police Department <br>Not Finished</a>
+            <a href="#">Mayor & Council <br>Not Finished</a>
+            
+
+        </div>
+        </div>
+
+        <div class="Residents">
+            <button class="Resdrop">Residents</button>
+            <div class="Res-content">
+                <a href="#"> Fire Restriction Stage <br>Not Finished</a>
+                <a href="#"> Affordable Housing <br>Not Finished</a>
+                <a href="#"> Airport <br>Not Finished</a>
+                <a href="#"> Bulk trash Pick-up <br>Not Finished</a>
+            </div>
+        </div>
+
+        <div class="Business">
+            <button class="Busdrop">Business</button>
+            <div class="Bus-content">
+                <a href="#">Airport <br>Not Finished</a>
+                <a href="#">City Code <br>Not Finished</a>
+                <a href="./FAQ.html">Frequently Asked Questions (FAQs)</a>
+                <a href="#">Purchasing <br>Not Finished</a>
+                <a href="#">Liquor Licensing <br>Not Finished</a>
+            </div>
+        </div>
+
+        <div class="Know">
+            <button class="knowdrop"> What To Know</button>
+            <div class="know-content">
+                <a href="#">Facebook <br>Not Finished</a>
+                <a href="#">Twitter <br>Not Finished</a>
+                <a href="#">Instagram <br>Not Finished</a>
+                <a href="#">Jobs <br>Not Finished</a>
+                <a href="#">Building Permit <br>Not Finished</a>
+            </div>
+        </div>
+
+        <div class="enter">
+            <button class="enterdrop">Entertainment</button>
+            <div class="enter-content">
+                <a href="./GrandCanyon.html">Grand Canyon</a>
+                <a href="#">Hell's Highway adults-only ghost tour in Flagstaff <br>Not Finished</a>
+                <a href="#">The Ghosts of Flagstaff family friendly tour <br>Not Finished</a>
+                <a href="#">Flagstaff haunted downtown tour <br>Not Finished</a>
+                <a href="#">Helicopter tour of the South Rim of the Grand Canyon <br>Not Finished</a>
+                <a href="#">Signature sunset Grand Canyon private Hummer tour <br>Not Finished</a>
+                <a href="#">IMAx "Grand Canyon The Hidden Secrets" movie tickets <br>Not Finished</a>
+                <a href="#">Flagstaff Historic Downtown Tour <br>Not Finished</a>
+            </div>
+        </div>
+
+        <div class="info"> About The Grand Canyon</div>
+
+        <div class="infoo">
+            Offering rim to rim hiking, mule rides, and whitewater rafting, Grand Canyon National Park is a hugely popular national park destination. 
+            Grand Canyon National Park encompasses canyons, river tributaries, and surrounding grounds. The Grand Canyon is situated in Arizona's northwestern quadrant. With millions of visitors making the trip to the canyon each year, this park is one of the most visited tourist destinations in the world. In addition, the park has been a UNESCO World Heritage Site since 1979. <br><br>
+
+The Grand Canyon had a long and arduous road to becoming a national park, beginning in the 1880s with several failed congressional bills. After making multiple visits to the area, Theodore Roosevelt declared the Grand Canyon a National Monument in 1908. The bill to grant national park status to the area was passed in 1919 and signed by then-President Woodrow Wilson. <br><br>
+
+There are two public areas of Grand Canyon National Park, the North and South Rims. At 7,000 feet above sea level, the Grand Canyon South Rim is the most accessible section of the national park, with numerous places where visitors can pull over to admire the views. The Grand Canyon North Rim, 1,000 feet higher than its southern sibling, isn't as popular because it is harder to get to, especially when harsh winter weather closes access roads. By car, the trip from one rim to the other is 220 miles. However, if traveling by foot, the distance across the canyon is 21 miles via the Kaibab Trails. <br>
+        </div>
+
+
+        <div class="pic1">
+            <p>South Rim</p>
+        </div>
+        <div class="pic2">
+            <p>West Canyon</p>
+        </div>
+        <div class="pic3">
+            <p>East Canyon</p>
+        </div>
+        <div class="pic4">
+            <p>North Rim</p>
+        </div>
+
+        <div class="pic5"></div>
+        <div class="pic6"></div>
+        <div class="pic7"></div>
+        <div class="pic8"></div>
+        <div class="pic9"></div>
+        <div class="pic10"></div>
+
+
+        <div class="content">
+
+            <div class="Viscenter"> <b>Grand Canyon Visitor Center
+            
+                
+                    <ul>450 AZ-64 <br> Grand Canyon Village, AZ <br> 86023</ul>
+                    <ul>VisitorCenter@flagstaffaz.gov</ul>
+            </div>
+            
+          
+            <div class="flag365"><b>Plan Your Visit Today!!
+                
+                <input type="text" id="fname" name="name" placeholder="Enter Name">
+                <input type="text" id="Lname" name="name" placeholder="Enter Last Name">
+               <div class="cal">Date: <input type="text" id="datepicker"></div>
+            
+              <form>
+                <input type="email" id="Email" name="Email" placeholder="email address" title="We ask for your email for feedback">
+                <input type="submit" value="Submit" id="sub">
+            </form>
+     
+            </div>
+        
+            
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206354.96717585882!2d-112.23415858333647!3d36.08626303683639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873312ae759b4d15%3A0x1f38a9bec9912029!2sGrand%20Canyon%20National%20Park!5e0!3m2!1sen!2sus!4v1670893736215!5m2!1sen!2sus" width="323" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+       
+
+    
+</body>
+</html>

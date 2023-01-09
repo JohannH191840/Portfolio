@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        .side{
+            background-color: rgb(29, 26, 26);
+            height: 100vh;
+            width: 300px;
+        }
+
+        .pic{
+            position: absolute;
+            background-image: url('profilepic.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin-top: 50px;
+            margin-left: 70px;
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            
+        }
+
+        .name{
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            margin-top: 200px;
+            margin-left: -40;
+            width: 160px;
+        }
+
+        .home{
+            margin-top: 320px;
+            margin-left: 20px;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px; 
+            background-color: rgb(29, 26, 26);
+        }
+
+        .anchor{
+            text-decoration: none;
+            color: white;
+        }
+
+        .line{
+            background-color: white;
+            width: 300px;
+            height: 5px;
+            position: absolute;
+            margin-top: 300px;
+        }
+
+        .Me{
+            margin-top: 20px;
+            margin-left: 20px;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px; 
+            background-color: rgb(29, 26, 26);
+        }
+
+        .Work{
+            margin-top: 20px;
+            margin-left: 20px;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px; 
+            background-color: rgb(29, 26, 26);
+        }
+
+        .Folder{
+            margin-top: 20px;
+            margin-left: 20px;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px; 
+            background-color: rgb(29, 26, 26);
+        }
+
+        .Github{
+            margin-top: 20px;
+            margin-left: 20px;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px; 
+            background-color: rgb(29, 26, 26);  
+        }
+
+        .inside{
+            position:absolute;
+            width: 1150px;
+            height: 100vh;
+            background-color: gray;
+            margin-left: 300px;
+            margin-top: -100vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        #Calc{
+            
+            background-color: red;
+            border-radius: 10%;
+            width: 225px;
+            height: 250px;
+            margin-left: 50px;
+            margin-top: 50px;
+            background-image: url('Photocalc.PNG');
+            background-size: 100%;
+            background-repeat: no-repeat; 
+            transition: width 2s, height 2s, font-size 2s, margin-left 2s, margin-top 2s;
+        }
+
+        #Calc:hover{
+            width: 250px;
+            height: 280px;
+            margin-top: 5px;
+            
+        }
+
+        .Calclink{
+            color: white;
+            padding: 0px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            width: 100px;
+            height: 40px;
+            border-radius: 50%; 
+            background-color: rgb(29, 26, 26); 
+            margin-top: 310px;
+            margin-left: 110px;
+            position: absolute;
+            
+        }
+
+        
+
+        .Az{
+            
+            
+            border-radius: 10%;
+            width: 225px;
+            height: 250px;
+            margin-left: 50px;
+            margin-top: 50px;
+            position: relative;
+        }
+        #Quiz{
+       
+            border-radius: 10%;
+            width: 225px;
+            height: 250px;
+            margin-left: 50px;
+            margin-top: 50px;
+            background-image: url('R.png');
+            background-size: 170%;
+            background-position: -70px;
+            background-repeat: no-repeat; 
+            transition: width 2s, height 2s, font-size 2s, margin-left 2s, margin-top 2s;
+        }
+
+        #Quiz:hover{
+            width: 250px;
+            height: 280px;
+            margin-top: 5px;
+        }
+
+        .Quizlink{
+            color: white;
+            padding: 0px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            width: 100px;
+            height: 40px;
+            border-radius: 50%; 
+            background-color: rgb(29, 26, 26); 
+            margin-top: 310px;
+            margin-left: 385px;
+            position: absolute;
+        }
+
+        #Game{
+            border-radius: 10%;
+            width: 225px;
+            height: 250px;
+            margin-left: 50px;
+            margin-top: 50px;
+            background-image: url('Spinthewheel.png');
+            background-size: 100%;
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: no-repeat; 
+            transition: width 2s, height 2s, font-size 2s, margin-left 2s, margin-top 2s;
+        }
+
+        #Game:hover{
+            width: 250px;
+            height: 280px;
+            margin-top: 5px;
+        }
+
+        .Gamelink{
+            color: white;
+            padding: 0px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            width: 100px;
+            height: 40px;
+            border-radius: 50%; 
+            background-color: rgb(29, 26, 26); 
+            margin-top: 310px;
+            margin-left: 660px;
+            position: absolute;
+        }
+
+        #Animation{
+            border-radius: 10%;
+            width: 225px;
+            height: 250px;
+            margin-left: 50px;
+            margin-top: 50px;
+            background-image: url('Marioland.jpg');
+            background-size: 100%;
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: no-repeat; 
+            transition: width 2s, height 2s, font-size 2s, margin-left 2s, margin-top 2s;
+
+        }
+
+        #Animation:hover{
+
+            width: 250px;
+            height: 280px;
+            margin-top: 5px;
+        }
+
+        .Animationlink{
+            color: white;
+            padding: 0px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            width: 100px;
+            height: 40px;
+            border-radius: 50%; 
+            background-color: rgb(29, 26, 26); 
+            margin-top: 310px;
+            margin-left: 940px;
+            position: absolute;
+        }
+
+        #PhotoGallery{
+            border-radius: 10%;
+            width: 225px;
+            height: 250px;
+            margin-left: 50px;
+            margin-top: 50px;
+            background-image: url('Gallery.jpg');
+            background-size: 100%;
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: no-repeat; 
+            transition: width 2s, height 2s, font-size 2s, margin-left 2s, margin-top 2s; 
+        }
+
+        #PhotoGallery:hover{
+            width: 250px;
+            height: 280px;
+            margin-top: 5px;
+        }
+
+        .Photolink{
+            color: white;
+            padding: 0px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            width: 100px;
+            height: 40px;
+            border-radius: 50%; 
+            background-color: rgb(29, 26, 26); 
+            margin-top: 740px;
+            margin-left: 110px;
+            position: absolute;
+        }
+
+        #Flex{
+            border-radius: 10%;
+            width: 225px;
+            height: 250px;
+            margin-left: 50px;
+            margin-top: 50px;
+            background-image: url('Flexpic.jpg');
+            background-size: 100%;
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: no-repeat; 
+            transition: width 2s, height 2s, font-size 2s, margin-left 2s, margin-top 2s;
+        }
+
+        #Flex:hover{
+            width: 250px;
+            height: 280px;
+            margin-top: 5px;
+        }
+
+        .Flexlink{
+            color: white;
+            padding: 0px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            width: 100px;
+            height: 40px;
+            border-radius: 50%; 
+            background-color: rgb(29, 26, 26); 
+            margin-top: 740px;
+            margin-left: 385px;
+            position: absolute;
+        }
+
+        #Form{
+            border-radius: 10%;
+            width: 225px;
+            height: 250px;
+            margin-left: 50px;
+            margin-top: 50px;
+            background-image: url('Spicepic.jpg');
+            background-size: 100%;
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: no-repeat; 
+            transition: width 2s, height 2s, font-size 2s, margin-left 2s, margin-top 2s;
+        }
+
+        #Form:hover{
+            width: 250px;
+            height: 280px;
+            margin-top: 5px;
+        }
+
+        .Formlink{
+            color: white;
+            padding: 0px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            width: 100px;
+            height: 40px;
+            border-radius: 50%; 
+            background-color: rgb(29, 26, 26); 
+            margin-top: 740px;
+            margin-left: 660px;
+            position: absolute;
+        }
+
+        #jQuery{
+            border-radius: 10%;
+            width: 225px;
+            height: 250px;
+            margin-left: 50px;
+            margin-top: 50px;
+            background-image: url('Flagstaffpic.jpg');
+            background-size: 100%;
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: no-repeat; 
+            transition: width 2s, height 2s, font-size 2s, margin-left 2s, margin-top 2s;
+        }
+
+        #jQuery:hover{
+            width: 250px;
+            height: 280px;
+            margin-top: 5px;
+        }
+
+        .Flagstafflink{
+            color: white;
+            padding: 0px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            width: 100px;
+            height: 40px;
+            border-radius: 50%; 
+            background-color: rgb(29, 26, 26); 
+            margin-top: 740px;
+            margin-left: 940px;
+            position: absolute;
+        }
+        
+
+
+
+
+        
+
+       
+    </style>
+</head>
+<body>
+    
+    <div class="side">
+        <div class="pic">
+            <p class="name">Johann Herrera</p> </div>
+            <div class="line">.</div>
+
+
+        <div class="info">
+
+            <button class="home">
+                <a class="anchor" href="./index.html">Home</a> </button>
+
+            <button class="Me">
+                <a class="anchor" href="./Resume.html">About Me</a> </button>
+            
+            <button class="Work">
+                <a class="anchor" href="./MyWork.html">My Work</a> </button>
+
+           
+
+            <button class="Github">
+                <a class="anchor" href="https://github.com/JohannH191840?tab=repositories">Github</a> </button>
+ 
+        </div>
+    </div>
+
+    <div class="inside">
+
+        
+
+        <div class="Az" id="Calc"></div>
+
+        <button class="Calclink">
+            <a class="anchor" href="./Calc.html"> Click Here</a>
+        </button>
+
+
+
+        <div class="Az" id="Quiz"></div>
+
+            <button class="Quizlink">
+                <a class="anchor" href="./Quiz.html">Click Here</a>
+            </button>
+       
+        <div class="Az" id="Game"></div>
+
+            <button class="Gamelink">
+                <a class="anchor" href="./Realgame.html">Click Here</a>
+            </button>
+
+        <div class="Az" id="Animation"></div>
+
+            <button class="Animationlink">
+                <a class="anchor" href="./MarioAn.html">Click Here</a>
+            </button>
+
+        <div class="Az" id="PhotoGallery"></div>
+
+        <button class="Photolink">
+            <a class="anchor" href="./PhotoAl.html">Click Here</a>
+        </button>
+
+        <div class="Az" id="Flex"></div>
+
+        <button class="Flexlink">
+            <a class="anchor" href="./Layout-2.html"> Click Here</a>
+        </button>
+
+        <div class="Az" id="Form"></div>
+
+        <button class="Formlink">
+            <a class="anchor" href="./Spice.html">Click Here</a>
+        </button>
+
+
+        <div class="Az" id="jQuery"></div>
+
+        <button class="Flagstafflink">
+            <a class="anchor" href="./Flagstaff.html"> Click Here</a>
+        </button>
+      
+        
+
+    </div>
+
+    
+</body>
+</html>

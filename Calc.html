@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+
+        
+            
+        
+        .calc{
+            background-color: black;
+            width: 422px;
+            height: 660px;
+            margin-left: 500px;
+            margin-top: 70px;
+            
+            
+        }
+        .button{
+            margin-left: 0px;
+            margin-right: 0px;
+            font-size: 50px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            background-color: red;
+        }
+
+        .operator{
+            background-color: yellow;
+        }
+
+        .clear, .buttonequal-sign{
+            background-color: yellow;
+        }
+        .operator, .clear{
+            font-size: 50px;
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+        }
+
+        .buttonequal-sign{
+            width: 205px;
+            height: 100px;
+            font-size: 50px;
+            
+        }
+
+        .button, .operator, .clear, .buttonequal-sign{
+            margin-top: 5px;
+            border-radius: 50px;
+        }
+        
+        .screen{
+            width: 410px;
+            height: 100px;
+            border-radius: 50px;
+            
+          
+        }
+
+        #result{
+            font-size: 45px;
+            text-align: right;
+            
+
+        }
+
+            .button, .operator, .clear, .buttonequal-sign{
+        transition-duration: 0.4s;
+        }
+
+        .button:hover {
+        background-color: orange;
+        color: white;
+        }
+
+        .operator:hover{
+            background-color: blue;
+            color: white;
+        }
+
+        .clear:hover{
+            background-color: red;
+        }
+
+        .buttonequal-sign:hover{
+            background-color: red;
+        }
+
+        #title{
+            margin-left: 600px;
+            font-size: 50px;
+        }
+
+        .clear{
+            width: 205px
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1 id="title">Calculator</h1>
+
+    <div class="calc">
+        <br>
+
+        <table>
+
+            <tr>
+
+                <td><input type="text" id="result" class="screen"></td>
+
+                <td></td>
+
+            </tr>
+        </table>
+
+        <div class="keys">
+            <input type="button" value="C" onclick="clearScreen()" class="clear" style="margin-left: 5px;"/>
+            <input type="button" value="+/-" class="operator" onclick="display('-')"></input>
+            <input type="button" value="/" class="operator" onclick="display('/')"></input>
+            <input type="button" value="7" class="button" onclick="display('7')" style="margin-left: 5px;"></input>
+            <input type="button" value="8" class="button" onclick="display('8')" ></input>
+            <input type="button" value="9" class="button" onclick="display('9')"></input>
+            <input type="button" value="x" class="operator" onclick="display('*')"></input>
+            <input type="button" value="4" class="button" onclick="display('4')" style="margin-left: 5px;"></input>
+            <input type="button" value="5" class="button" onclick="display('5')"></input>
+            <input type="button" value="6" class="button" onclick="display('6')"></input>
+            <input type="button" value="-" class="operator" onclick="display('-')"></input>
+            <input type="button" value="1" class="button" onclick="display('1')" style="margin-left: 5px;"></input>
+            <input type="button" value="2" class="button" onclick="display('2')"></input>
+            <input type="button" value="3" class="button" onclick="display('3')"></input>
+            <input type="button" value="+" class="operator" onclick="display('+')"></input>
+            <input type="button" value="0" class="button" onclick="display('0')" style="margin-left: 5px;"></input>
+            <input type="button" value="." class="button" onclick="display('.')"></input>
+            <input type="button" value="=" class="buttonequal-sign" onclick="solve('')"></input>
+            
+        </div>
+    </div>
+    
+    <script>
+
+function display(val){
+
+document.getElementById('result').value += val
+
+return val
+
+}
+
+function solve(){
+
+let x = document.getElementById('result').value
+
+let y = eval(x);
+
+document.getElementById('result').value = y
+
+return y
+
+}
+
+function clearScreen(){
+
+document.getElementById('result').value = ''
+
+}
+    </script>
+</body>
+</html>

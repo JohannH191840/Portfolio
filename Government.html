@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government</title>
+
+    <style>
+        body{
+            background-color: rgb(89, 183, 233);
+        }
+        h1{
+            margin-left: 600px;
+            margin-top: 50px;
+            font-size: 50px;
+        }
+
+        ul{
+            background-color: rgb(52, 126, 68);
+            font-size: 40px;
+        }
+
+        li{
+            margin-left: 100px;
+            font-size: 25px;
+        }
+
+        .Govdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px;
+           
+        }
+
+        .Government{
+            position: relative;
+            display: inline-block;           
+        }
+
+        .Gov-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 235px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);          
+        }
+
+        .Gov-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px;            
+        }
+
+        .Gov-content a:hover { background-color: #f1f1f1;}
+
+        .Government:hover .Gov-content {
+            display: block;
+        }
+        
+        .Government:hover .Govdrop{
+            background-color: Gray;
+        }
+       
+
+
+        .Resdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px; 
+                     
+        }
+
+        .Residents{
+            position: relative;
+            display: inline-block;        
+        }
+
+        .Res-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 235px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);     
+            
+        }
+
+        .Res-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px; 
+        }
+
+        .Res-content a:hover { background-color: #f1f1f1;}
+
+        .Residents:hover .Res-content{
+            display: block;
+        }
+
+        .Residents:hover .Resdrop{
+            background-color: gray;
+        }
+
+
+
+        .Busdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px;  
+        }
+
+        .Business{
+            position: relative;
+            display: inline-block;  
+        }
+
+        .Bus-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 235px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+        }
+
+        .Bus-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px; 
+        }
+
+        .Bus-content a:hover { background-color: #f1f1f1;}
+
+        .Business:hover .Bus-content{
+            display: block;
+        }
+
+        .Business:hover .Busdrop{
+            background-color: gray;
+        }
+
+
+
+        .knowdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px;  
+        }
+
+        .Know{
+        position: relative;
+            display: inline-block;  
+        }
+
+        .know-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 235px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+            
+        }
+
+        .know-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px; 
+            
+        }
+
+        .know-content a:hover { background-color: #f1f1f1;}
+
+        .Know:hover .know-content{
+            display: block;
+        }
+
+        .Know:hover .knowdrop{
+            background-color: gray;
+        }
+
+        .enterdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px;  
+        }
+
+        .enter{
+        position: relative;
+            display: inline-block;  
+        }
+
+        .enter-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 235px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+        }
+
+        .enter-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px; 
+            
+        }
+
+        .enter-content a:hover { background-color: #f1f1f1;}
+
+        .enter:hover .enter-content{
+            display: block;
+        }
+
+        .enter:hover .enterdrop{
+            background-color: gray;
+        }
+
+        .Aboutflag{
+            color: black;
+            font-size: 40px;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+
+        #flagabout{
+            font-size: 20px;
+            margin-left: 50px;
+            margin-right: 300px;
+        }
+
+        .home{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px; 
+        }
+        .anchor{
+            text-decoration: none;
+            color:white;
+        }
+
+      
+    </style>
+</head>
+<body>
+
+
+
+
+    <button class="home">
+        <a class="anchor" href="./Flagstaff.html">Home</a>
+</button>
+    <div class="Government">
+        <button class="Govdrop"> Government</button>
+        <div class="Gov-content">
+            <a href="./Government.html">Government</a>
+            <a href="./Minwage.html">Minimum Wage</a>
+            <a href="#">Police Department <br>Not Finished</a>
+            <a href="#">Mayor & Council <br>Not Finished</a>
+            
+
+        </div>
+        </div>
+
+        <div class="Residents">
+            <button class="Resdrop">Residents</button>
+            <div class="Res-content">
+                <a href="#"> Fire Restriction Stage <br>Not Finished</a>
+                <a href="#"> Affordable Housing <br>Not Finished</a>
+                <a href="#"> Airport <br>Not Finished</a>
+                <a href="#"> Bulk trash Pick-up <br>Not Finished</a>
+            </div>
+        </div>
+
+        <div class="Business">
+            <button class="Busdrop">Business</button>
+            <div class="Bus-content">
+                <a href="#">Airport <br>Not Finished</a>
+                <a href="#">City Code <br>Not Finished</a>
+                <a href="./FAQ.html">Frequently Asked Questions (FAQs)</a>
+                <a href="#">Purchasing <br>Not Finished</a>
+                <a href="#">Liquor Licensing <br>Not Finished</a>
+            </div>
+        </div>
+
+        <div class="Know">
+            <button class="knowdrop"> What To Know</button>
+            <div class="know-content">
+                <a href="#">Facebook <br>Not Finished</a>
+                <a href="#">Twitter <br>Not Finished</a>
+                <a href="#">Instagram <br>Not Finished</a>
+                <a href="#">Jobs <br>Not Finished</a>
+                <a href="#">Building Permit <br>Not Finished</a>
+            </div>
+        </div>
+
+        <div class="enter">
+            <button class="enterdrop">Entertainment</button>
+            <div class="enter-content">
+                <a href="./GrandCanyon.html">Grand Canyon</a>
+                <a href="#">Hell's Highway adults-only ghost tour in Flagstaff <br>Not Finished</a>
+                <a href="#">The Ghosts of Flagstaff family friendly tour <br>Not Finished</a>
+                <a href="#">Flagstaff haunted downtown tour <br>Not Finished</a>
+                <a href="#">Helicopter tour of the South Rim of the Grand Canyon <br>Not Finished</a>
+                <a href="#">Signature sunset Grand Canyon private Hummer tour <br>Not Finished</a>
+                <a href="#">IMAx "Grand Canyon The Hidden Secrets" movie tickets <br>Not Finished</a>
+                <a href="#">Flagstaff Historic Downtown Tour <br>Not Finished</a>
+            </div>
+        </div>
+    <div class="info"> 
+
+        <h1>Government</h1>
+        <ul> Agendas/ Minutes</ul>
+        <li>Access records such as agendas, minutes, and meeting action summaries.</li>
+        <br>
+
+        <ul>Boards & Commissions</ul>
+        <li>Get involved with your municipal government, view board and commission vacancies</li>
+        <br>
+
+        <ul>City Manager</ul>
+        <li>Stay in touch and learn about the executive leadership responsibilities of your City Manager</li>
+        <li>Learn more about your Senior Deputy City Manager responsible for Police, Parks/Recreation/Open Space/Events, Fire, Human Resources, Risk Management and Public Works.</li>
+        <li>Learn more about your Interim Deputy City Manager responsible for the City Clerk's office, Economic Vitality, IT and Management Services.</li>
+        <br>
+
+        <ul>City Attorney</ul>
+        <li>Learn about the civil division, criminal division, criminal complaints / charges, trial information, victim services, and legal resources.</li>
+        <li>Find information about the City Attorney's office.</li>
+        <br>
+
+        <ul>City Clerk's Office & City Code</ul>
+        <li>The City Clerk's Office provides guidance and information on government processes and decisions.</li>
+        <li>Get information on elections, request public documents, and read up on city cod</li>
+        <li>Learn more about the City Clerk's Office</li>
+        <br>
+
+        <ul>Divisions</ul>
+        <li>Numerous departments are here for you and your community. Browse the various city divisions or search our staff directory to find who and what you are looking for.</li>
+        <br>
+
+        <ul>Elections</ul>
+        <li>Stay current with official notices, voter and candidate information and campaign financial reports</li>
+        <br>
+
+        <ul>Emergency Preparedness</ul>
+        <li>Browsw Fire & Flood Resources</li>
+        <br>
+
+        <ul>Hours of Operation</ul>
+        <li>The City of Flagstaff has regular hours from 8 am to 4:30 pm. </li>
+        <li>Please be advised that city divisions, sections or programs outside of City Hall may vary in hours of operation. </li>
+    </div>
+    
+</body>
+</html>

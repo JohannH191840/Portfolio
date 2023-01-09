@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F A Q</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+
+    <style>
+        
+        body{
+            background-color: rgb(89, 183, 233);
+        }
+        h1{
+            margin-left: 400px;
+            margin-top: 50px;
+            font-size: 50px;
+            margin-bottom: 150px;
+        }
+
+        .Govdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px;
+           
+        }
+
+        .Government{
+            position: relative;
+            display: inline-block;           
+        }
+
+        .Gov-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 235px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);          
+        }
+
+        .Gov-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px;            
+        }
+
+        .Gov-content a:hover { background-color: #f1f1f1;}
+
+        .Government:hover .Gov-content {
+            display: block;
+        }
+        
+        .Government:hover .Govdrop{
+            background-color: Gray;
+        }
+       
+
+
+        .Resdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px; 
+                     
+        }
+
+        .Residents{
+            position: relative;
+            display: inline-block;        
+        }
+
+        .Res-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 235px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);     
+            
+        }
+
+        .Res-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px; 
+        }
+
+        .Res-content a:hover { background-color: #f1f1f1;}
+
+        .Residents:hover .Res-content{
+            display: block;
+        }
+
+        .Residents:hover .Resdrop{
+            background-color: gray;
+        }
+
+
+
+        .Busdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px;  
+        }
+
+        .Business{
+            position: relative;
+            display: inline-block;  
+        }
+
+        .Bus-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 235px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+        }
+
+        .Bus-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px; 
+        }
+
+        .Bus-content a:hover { background-color: #f1f1f1;}
+
+        .Business:hover .Bus-content{
+            display: block;
+        }
+
+        .Business:hover .Busdrop{
+            background-color: gray;
+        }
+
+
+
+        .knowdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px;  
+        }
+
+        .Know{
+        position: relative;
+            display: inline-block;  
+        }
+
+        .know-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 235px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+            
+        }
+
+        .know-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px; 
+            
+        }
+
+        .know-content a:hover { background-color: #f1f1f1;}
+
+        .Know:hover .know-content{
+            display: block;
+        }
+
+        .Know:hover .knowdrop{
+            background-color: gray;
+        }
+
+        .enterdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px;  
+        }
+
+        .enter{
+        position: relative;
+            display: inline-block;  
+        }
+
+        .enter-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 235px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+        }
+
+        .enter-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px; 
+            
+        }
+
+        .enter-content a:hover { background-color: #f1f1f1;}
+
+        .enter:hover .enter-content{
+            display: block;
+        }
+
+        .enter:hover .enterdrop{
+            background-color: gray;
+        }
+
+
+        .home{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            width: 235px;
+            height: 70px; 
+        }
+        .anchor{
+            text-decoration: none;
+            color:white;
+        }
+        
+        #accordion{
+            margin-left: 300px;
+            margin-right: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="home">
+        <a class="anchor" href="./Flagstaff.html">Home</a>
+</button>
+    <div class="Government">
+        <button class="Govdrop"> Government</button>
+        <div class="Gov-content">
+            <a href="./Government.html">Government</a>
+            <a href="./Minwage.html">Minimum Wage</a>
+            <a href="#">Police Department <br>Not Finished</a>
+            <a href="#">Mayor & Council <br>Not Finished</a>
+            
+
+        </div>
+        </div>
+
+        <div class="Residents">
+            <button class="Resdrop">Residents</button>
+            <div class="Res-content">
+                <a href="#"> Fire Restriction Stage <br>Not Finished</a>
+                <a href="#"> Affordable Housing <br>Not Finished</a>
+                <a href="#"> Airport <br>Not Finished</a>
+                <a href="#"> Bulk trash Pick-up <br>Not Finished</a>
+            </div>
+        </div>
+
+        <div class="Business">
+            <button class="Busdrop">Business</button>
+            <div class="Bus-content">
+                <a href="#">Airport <br>Not Finished</a>
+                <a href="#">City Code <br>Not Finished</a>
+                <a href="./FAQ.html">Frequently Asked Questions (FAQs)</a>
+                <a href="#">Purchasing <br>Not Finished</a>
+                <a href="#">Liquor Licensing <br>Not Finished</a>
+            </div>
+        </div>
+
+        <div class="Know">
+            <button class="knowdrop"> What To Know</button>
+            <div class="know-content">
+                <a href="#">Facebook <br>Not Finished</a>
+                <a href="#">Twitter <br>Not Finished</a>
+                <a href="#">Instagram <br>Not Finished</a>
+                <a href="#">Jobs <br>Not Finished</a>
+                <a href="#">Building Permit <br>Not Finished</a>
+            </div>
+        </div>
+
+        <div class="enter">
+            <button class="enterdrop">Entertainment</button>
+            <div class="enter-content">
+                <a href="./GrandCanyon.html">Grand Canyon</a>
+                <a href="#">Hell's Highway adults-only ghost tour in Flagstaff <br>Not Finished</a>
+                <a href="#">The Ghosts of Flagstaff family friendly tour <br>Not Finished</a>
+                <a href="#">Flagstaff haunted downtown tour <br>Not Finished</a>
+                <a href="#">Helicopter tour of the South Rim of the Grand Canyon <br>Not Finished</a>
+                <a href="#">Signature sunset Grand Canyon private Hummer tour <br>Not Finished</a>
+                <a href="#">IMAx "Grand Canyon The Hidden Secrets" movie tickets <br>Not Finished</a>
+                <a href="#">Flagstaff Historic Downtown Tour <br>Not Finished</a>
+            </div>
+            </div>
+
+            <div class="Info">
+
+                <h1> Frequently Asked Questions (FAQs)</h1>
+
+            </div>
+
+            <div id="accordion">
+                <h3>Does Flagstaff City Hall rent meeting rooms?</h3>
+                <div>
+                  <p>
+                    Yes! Meeting rooms can be rented to Non-Profit and Non-Political organizations.
+                  </p>
+                </div>
+                <h3>How can I reserve hangar Space</h3>
+                <div>
+                  <p>
+                    Please contact us at (928) 213-2930 or send contact info to carrie.elsass@flagstaffaz.gov.
+                  </p>
+                </div>
+                <h3>How do I elect to have receive the Aline Pay Card</h3>
+                <div>
+                  <p>
+                    To sign up for the Aline Pay Card complete the Wage Payment Election and Consent Form (PDF) and select the Aline Pay Card option.
+                  </p>
+                </div>
+                <h3>What is backflow</h3>
+                <div>
+                  <p>
+                    Backflow occurs when hydraulic conditions within our water distribution system deviate from “normal” and flow reverses, causing pollutants and contaminants to enter the system.
+                  </p>
+                </div>
+                <h3>When is my court date?</h3>
+                <div>
+                  <p>
+                    Your pretrial conference and trial dates are written on the order given to you at your initial appearance or arraignment. If you have a question regarding your court date, please contact the Flagstaff City Court at (928) 213-3000.
+                  </p>
+                </div>
+                <h3>How do I make a reservation</h3>
+                <div>
+                  <p>
+                    Fill out the Civic Non-Profit banner reservation application and email to tbishop@flagstaffaz.gov
+                  </p>
+                </div>
+
+                <h3>What is the significance of the Regional Plan?</h3>
+                <div>
+                  <p>
+                    As mandated by state law, the plan covers a range of topics with information on current conditions and our vision for the future as it relates to the topic at hand. In addition, the Plan outlines carefully developed goals and policies to realize the future vision. As a policy guide the Plan provides a framework for other detailed planning documents and planning tools, such as the zoning code, strategic plans (perhaps for a neighborhood or other area of the City), and master plans (utilities, parks and recreation, etc.).
+                  </p>
+                </div>
+
+                <h3>Why are the Green Bike Lanes neing utilized in Flagstaff?</h3>
+                <div>
+                  <p>
+                    Green Bike Lanes have been placed at various locations throughout Flagstaff as an experiment for the Northern Arizona University’s traffics department. The City of Flagstaff has agreed with the university’s staff to supply the materials and labor for this project. The university’s staff will record the interaction of motorist and bicyclist before and after the installation of the Green Bike Lanes.
+                  </p>
+                </div>
+
+                <h3>How do I get a planning Development Manager</h3>
+                <div>
+                  <p>
+                    You'll be assigned one when you present your project plans to the City. The Development Case Manager will be assigned based on the complexity and type of project.
+                  </p>
+                </div>
+
+                <h3>How do I elect to have my pay direct deposited into my accound</h3>
+                <div>
+                  <p>
+                    To sign up for direct deposit complete the form located here (Wage Payment Election and Consent Form (PDF)) or in person at the Human Resources Department. You’ll need to know the routing number and your bank account number. If you aren’t sure, please contact your bank in order to be certain the information is accurate.
+                  </p>
+                </div>
+              </div>
+
+              
+        
+            
+    
+</body>
+</html>

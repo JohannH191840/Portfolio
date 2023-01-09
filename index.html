@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <style>
+        @media(max-width:750px){
+        
+        }
+        @media (min-width:750px) {
+            body {
+                background-color: black;
+            }
+
+            .side {
+                background-color: rgb(29, 26, 26);
+                height: 100vh;
+                width: 300px;
+            }
+
+            .pic {
+                position: absolute;
+                background-image: url('profilepic.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                margin-top: 50px;
+                margin-left: 70px;
+                border-radius: 50%;
+                height: 150px;
+                width: 150px;
+
+            }
+
+            .name {
+                text-align: center;
+                color: white;
+                font-size: 25px;
+                margin-top: 200px;
+                margin-left: -40;
+                width: 160px;
+            }
+
+            .home {
+                margin-top: 320px;
+                margin-left: 20px;
+                color: white;
+                padding: 0px;
+                font-size: 35px;
+                border: none;
+                cursor: pointer;
+                width: 235px;
+                height: 70px;
+                background-color: rgb(29, 26, 26);
+            }
+
+            .anchor {
+                text-decoration: none;
+                color: white;
+            }
+
+            .line {
+                background-color: white;
+                width: 300px;
+                height: 5px;
+                position: absolute;
+                margin-top: 300px;
+            }
+
+            .Me {
+                margin-top: 20px;
+                margin-left: 20px;
+                color: white;
+                padding: 0px;
+                font-size: 35px;
+                border: none;
+                cursor: pointer;
+                width: 235px;
+                height: 70px;
+                background-color: rgb(29, 26, 26);
+            }
+
+            .Work {
+                margin-top: 20px;
+                margin-left: 20px;
+                color: white;
+                padding: 0px;
+                font-size: 35px;
+                border: none;
+                cursor: pointer;
+                width: 235px;
+                height: 70px;
+                background-color: rgb(29, 26, 26);
+            }
+
+            .Folder {
+                margin-top: 20px;
+                margin-left: 20px;
+                color: white;
+                padding: 0px;
+                font-size: 35px;
+                border: none;
+                cursor: pointer;
+                width: 235px;
+                height: 70px;
+                background-color: rgb(29, 26, 26);
+            }
+
+            .Github {
+                margin-top: 20px;
+                margin-left: 20px;
+                color: white;
+                padding: 0px;
+                font-size: 35px;
+                border: none;
+                cursor: pointer;
+                width: 235px;
+                height: 70px;
+                background-color: rgb(29, 26, 26);
+            }
+
+            .box {
+                position: absolute;
+                width: 1150px;
+                height: 100vh;
+                background-color: rgb(8, 8, 81);
+                margin-left: 300px;
+                margin-top: -100vh;
+            }
+
+
+            #title {
+                position: absolute;
+                width: 1000px;
+                height: 100px;
+                color: white;
+                margin-top: 250px;
+                margin-left: 350px;
+                font-size: 70px;
+            }
+
+            #one {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                border: solid red 5px;
+                margin-top: 250px;
+                margin-left: 70px;
+            }
+
+            #two {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                border: solid green 5px;
+                margin-top: 100px;
+                margin-left: 400px;
+            }
+
+            #three {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                border: solid green 5px;
+                margin-top: 50px;
+                margin-left: 800px;
+            }
+
+            #four {
+                position: absolute;
+                width: 250px;
+                height: 250px;
+                border: solid green 5px;
+                margin-top: 550px;
+                margin-left: 800px;
+            }
+
+            #five {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                border: solid red 5px;
+                margin-top: 600px;
+                margin-left: 250px;
+                border-radius: 50%;
+                animation-name: grow;
+                animation-duration: 15s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+            }
+
+            #six {
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                border: solid red 5px;
+                margin-top: 200px;
+                margin-left: 750px;
+                border-radius: 50%;
+            }
+
+            #seven {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                border: solid green 5px;
+                margin-top: 500px;
+                margin-left: 500px;
+                border-radius: 50%;
+            }
+
+            #one,
+            #two,
+            #three,
+            #four {
+                animation-name: box;
+                animation-duration: 15s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+            }
+
+            #seven,
+            #six {
+                animation-name: circle;
+                animation-duration: 15s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes box {
+                0% {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 5;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+
+                50% {
+                    transform: rotate(360deg);
+                }
+
+                100% {
+                    transform: rotate(-360deg);
+                }
+            }
+
+            @keyframes circle {
+                0% {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 5;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+
+                50% {
+                    scale: 50%;
+                }
+
+                100% {
+                    scale: 100%;
+                }
+            }
+
+            @keyframes grow {
+                0% {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 5;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+
+                50% {
+                    scale: 70%;
+                }
+
+                100% {
+                    scale: 100%;
+                }
+            }
+
+            #j {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                margin-top: 350px;
+                margin-left: 270px;
+                font-size: 90px;
+                color: white;
+                text-align: center;
+            }
+
+            #o {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                margin-top: 350px;
+                margin-left: 310px;
+                font-size: 90px;
+                color: white;
+                text-align: center;
+            }
+
+            #h {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                margin-top: 350px;
+                margin-left: 360px;
+                font-size: 90px;
+                color: white;
+                text-align: center;
+            }
+
+            #a {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                margin-top: 350px;
+                margin-left: 410px;
+                font-size: 90px;
+                color: white;
+                text-align: center;
+            }
+
+            #n {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                margin-top: 350px;
+                margin-left: 460px;
+                font-size: 90px;
+                color: white;
+                text-align: center;
+            }
+
+            #nn {
+
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                margin-top: 350px;
+                margin-left: 510px;
+                font-size: 90px;
+                color: white;
+                text-align: center;
+            }
+
+            #hh {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                margin-top: 430px;
+                margin-left: 410px;
+                font-size: 90px;
+                color: white;
+                text-align: center;
+            }
+
+            #e {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                margin-top: 430px;
+                margin-left: 460px;
+                font-size: 90px;
+                color: white;
+                text-align: center;
+            }
+
+            #r {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                margin-top: 430px;
+                margin-left: 510px;
+                font-size: 90px;
+                color: white;
+                text-align: center;
+            }
+
+            #rr {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                margin-top: 430px;
+                margin-left: 560px;
+                font-size: 90px;
+                color: white;
+                text-align: center;
+            }
+
+            #ee {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                margin-top: 430px;
+                margin-left: 610px;
+                font-size: 90px;
+                color: white;
+                text-align: center;
+            }
+
+            #rrr {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                margin-top: 430px;
+                margin-left: 660px;
+                font-size: 90px;
+                color: white;
+                text-align: center;
+            }
+
+            #aa {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                margin-top: 430px;
+                margin-left: 710px;
+                font-size: 90px;
+                color: white;
+                text-align: center;
+            }
+
+
+
+
+            #j,
+            #o,
+            #h,
+            #a,
+            #n,
+            #nn,
+            #hh,
+            #e,
+            #r,
+            #rr,
+            #ee,
+            #rrr,
+            #aa {
+                animation-name: letters;
+                animation-duration: 15s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes letters {
+                0% {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 5;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+
+                50% {
+                    transform: rotate(360deg);
+                }
+
+                100% {
+                    transform: rotate(-360deg);
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="side">
+        <div class="pic">
+            <p class="name">Johann Herrera</p>
+        </div>
+        <div class="line">.</div>
+
+
+        <div class="info">
+
+            <button class="home">
+                <a class="anchor" href="./Poerfolio.html">Home</a> </button>
+
+            <button class="Me">
+                <a class="anchor" href="./Resume.html">About Me</a> </button>
+
+            <button class="Work">
+                <a class="anchor" href="./MyWork.html">My Work</a> </button>
+
+
+            <button class="Github">
+                <a class="anchor" href="https://github.com/JohannH191840?tab=repositories">Github</a> </button>
+
+
+        </div>
+    </div>
+
+    <div class="box">
+
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+        <div id="six">6</div>
+        <div id="seven">7</div>
+
+        <div id="j">J</div>
+        <div id="o">o</div>
+        <div id="h">h</div>
+        <div id="a">a</div>
+        <div id="n">n</div>
+        <div id="nn">n</div>
+        <div id="hh">H</div>
+        <div id="e">e</div>
+        <div id="r">r</div>
+        <div id="rr">r</div>
+        <div id="ee">e</div>
+        <div id="rrr">r</div>
+        <div id="aa">a</div>
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

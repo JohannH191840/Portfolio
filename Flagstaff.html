@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Project</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( document ).tooltip();
+  } );
+  $( function() {
+    $( "#selectable" ).selectable();
+  } );
+  </script>
+
+    <style>
+
+label {
+    display: inline-block;
+    width: 5em;
+  }
+
+
+        .picture{
+            background-image: url('Flagstaff.jpg');
+            background-repeat: no-repeat; 
+            width: 100%;
+            height: 820px;
+            background-size: 100%;
+        }
+
+
+       
+           
+        
+        
+        .Govdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 40px;
+            border: none;
+            cursor: pointer;
+            width: 280px;
+            height: 70px;
+           
+        }
+
+        .Government{
+            position: relative;
+            display: inline-block;           
+        }
+
+        .Gov-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 280px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);          
+        }
+
+        .Gov-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px;            
+        }
+
+        .Gov-content a:hover { background-color: #f1f1f1;}
+
+        .Government:hover .Gov-content {
+            display: block;
+        }
+        
+        .Government:hover .Govdrop{
+            background-color: Gray;
+        }
+       
+
+
+        .Resdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 40px;
+            border: none;
+            cursor: pointer;
+            width: 280px;
+            height: 70px; 
+                     
+        }
+
+        .Residents{
+            position: relative;
+            display: inline-block;        
+        }
+
+        .Res-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 280px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);     
+            
+        }
+
+        .Res-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px; 
+        }
+
+        .Res-content a:hover { background-color: #f1f1f1;}
+
+        .Residents:hover .Res-content{
+            display: block;
+        }
+
+        .Residents:hover .Resdrop{
+            background-color: gray;
+        }
+
+
+
+        .Busdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 40px;
+            border: none;
+            cursor: pointer;
+            width: 280px;
+            height: 70px;  
+        }
+
+        .Business{
+            position: relative;
+            display: inline-block;  
+        }
+
+        .Bus-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 280px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+        }
+
+        .Bus-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px; 
+        }
+
+        .Bus-content a:hover { background-color: #f1f1f1;}
+
+        .Business:hover .Bus-content{
+            display: block;
+        }
+
+        .Business:hover .Busdrop{
+            background-color: gray;
+        }
+
+
+
+        .knowdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 40px;
+            border: none;
+            cursor: pointer;
+            width: 280px;
+            height: 70px;  
+        }
+
+        .Know{
+        position: relative;
+            display: inline-block;  
+        }
+
+        .know-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 280px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+            
+        }
+
+        .know-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px; 
+            
+        }
+
+        .know-content a:hover { background-color: #f1f1f1;}
+
+        .Know:hover .know-content{
+            display: block;
+        }
+
+        .Know:hover .knowdrop{
+            background-color: gray;
+        }
+
+        .enterdrop{
+            background-color: gray;
+            color: white;
+            padding: 0px;
+            font-size: 40px;
+            border: none;
+            cursor: pointer;
+            width: 298px;
+            height: 70px;  
+        }
+
+        .enter{
+        position: relative;
+            display: inline-block;  
+        }
+
+        .enter-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 298px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+        }
+
+        .enter-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px; 
+            
+        }
+
+        .enter-content a:hover { background-color: #f1f1f1;}
+
+        .enter:hover .enter-content{
+            display: block;
+        }
+
+        .enter:hover .enterdrop{
+            background-color: gray;
+        }
+
+        .Aboutflag{
+            color: black;
+            font-size: 40px;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+
+        #flagabout{
+            font-size: 20px;
+            margin-left: 50px;
+            margin-right: 300px;
+        }
+
+        .InfoPic{
+            margin-left: 200px;
+            
+        }
+        #Pic1{
+            background-color: red;
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            border: 5px solid black;
+        }
+
+        #Pic2{
+            position: absolute;
+            background-color: green;
+            width: 300px;
+            height: 300px;
+            margin-left: 600px;
+            background-size: 109%;
+            border: 5px solid black;
+         
+        }
+
+        #Pic3{
+            position: absolute;
+            background-color: blue;
+            width: 300px;
+            height: 300px;
+            margin-left: 600px;
+            margin-top: 300px;
+            border: 5px solid black;
+        }
+
+        #Pic4{
+            position: absolute;
+            background-color: purple;
+            width: 300px;
+            height: 300px;
+            margin-top: 600px;
+            border: 5px solid black;
+            
+        }
+
+        #Pic5{
+            position: absolute;
+            background-color: aqua;
+            width: 300px;
+            height: 300px;
+            margin-top: 900px;
+            border: 5px solid black;
+            background-size: 104%;
+        }
+
+        #Pic6{
+            position: absolute;
+            background-color: aquamarine;
+            width: 600px;
+            height: 600px;
+            margin-top: 600px;
+            margin-left: 300px;
+            border: 5px solid black;
+        }
+
+        .content{
+            background-color: rgb(39, 67, 39);
+            color: white;
+            width: 100%;
+            height: 300px;
+            margin-top: 1300px;
+        }
+
+        .Viscenter{
+            margin-left: 150px;
+            margin-top: 70px;
+            position: absolute;
+            color: black;
+            font-size: 20px;
+        
+        }
+
+        ul{
+            color: white;
+        }
+
+        .flag365{
+            position: absolute;
+            margin-left: 650px;
+            margin-top: 70px;
+            color: black;
+            font-size: 20px;
+
+        }
+
+        #Email{
+            width: 200px;
+            height: 50px;
+            background-color: #f1f1f1;
+            text-align: center;
+            font-size: 20px;
+            margin-left: 0;
+            position: absolute;
+        }
+
+        #sub{
+            width: 150px;
+            height: 57px;
+            background-color: rgb(93, 163, 210);
+            margin-left: 200px;
+            position: absolute;
+        }
+
+        iframe{
+            margin-left: 1134px;
+        }
+     
+  #selectable .ui-selected {
+    color: white; 
+    position: absolute; 
+    margin-left: 50px;
+     margin-top: 1700px; 
+     width: 900px; 
+     height: 900px;
+      background-repeat: no-repeat; 
+      background-size: 100%; 
+      background-color: black;
+    
+    
+    
+    }
+
+  #selectable { list-style-type: none; margin: 0; padding: 0;  }
+  #selectable li {font-size: 4em; text-align: center;}
+
+        
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="picture">
+       
+
+        <div class="Government">
+            <button class="Govdrop"> Government</button>
+            <div class="Gov-content">
+                <a href="./Government.html">Government</a>
+                <a href="./Minwage.html">Minimum Wage</a>
+                <a href="#">Police Department <br>Not Finished</a>
+                <a href="#">Mayor & Council <br>Not Finished</a>
+
+            </div>
+            </div>
+
+            <div class="Residents">
+                <button class="Resdrop">Residents</button>
+                <div class="Res-content">
+                    <a href="#"> Fire Restriction Stage <br>Not Finished</a>
+                    <a href="#"> Affordable Housing <br>Not Finished</a>
+                    <a href="#"> Airport <br>Not Finished</a>
+                    <a href="#"> Bulk trash Pick-up <br>Not Finished</a>
+                </div>
+            </div>
+
+            <div class="Business">
+                <button class="Busdrop">Business</button>
+                <div class="Bus-content">
+                    <a href="#">Airport <br>Not Finished</a>
+                    <a href="#">City Code <br>Not Finished</a>
+                    <a href="./FAQ.html">Frequently Asked Questions (FAQs)</a>
+                    <a href="#">Purchasing <br>Not Finished</a>
+                    <a href="#">Liquor Licensing <br>Not Finished</a>
+                </div>
+            </div>
+
+            <div class="Know">
+                <button class="knowdrop"> What To Know</button>
+                <div class="know-content">
+                    <a href="#">Facebook <br>Not Finished</a>
+                    <a href="#">Twitter <br>Not Finished</a>
+                    <a href="#">Instagram <br>Not Finished</a>
+                    <a href="#">Jobs <br>Not Finished</a>
+                    <a href="#">Building Permit <br>Not Finished</a>
+                </div>
+            </div>
+
+            <div class="enter">
+                <button class="enterdrop">Entertainment</button>
+                <div class="enter-content">
+                    <a href="./GrandCanyon.html">Grand Canyon</a>
+                    <a href="#">Hell's Highway adults-only ghost tour in Flagstaff <br>Not Finished</a>
+                    <a href="#">The Ghosts of Flagstaff family friendly tour <br>Not Finished</a>
+                    <a href="#">Flagstaff haunted downtown tour <br>Not Finished</a>
+                    <a href="#">Helicopter tour of the South Rim of the Grand Canyon <br>Not Finished</a>
+                    <a href="#">Signature sunset Grand Canyon private Hummer tour <br>Not Finished</a>
+                    <a href="#">IMAx "Grand Canyon The Hidden Secrets" movie tickets <br>Not Finished</a>
+                    <a href="#">Flagstaff Historic Downtown Tour <br>Not Finished</a>
+                </div>
+            </div>
+     
+           
+       
+        
+    </div>
+
+    <div class="Aboutflag"> ARIZONA'S DESTINATION FOR ALL SEASONS
+        <p id="flagabout"> Located in the high country mountains of northern Arizona, Flagstaff's four seasons are enviable by many. <br><br>Winter adventures await in Arizona's officially designated Winter Wonderland with an average 108" of snow fall in downtown, while Spring offers breathtaking beauty of blooms in the world's largest contiguous emerald green ponderosa pine forest. <br><br> Summer temperatures average in the low 80s with sapphire blue skies and crisp mountain air, while the bounty continues into Fall with a panoramic canvas of quaking aspen and foliage offering hues of reds and purples.</p>
+    </div>
+
+    <div class="InfoPic">
+        <div id="selectable">
+
+            <li id="Pic1"; class="ui-state-default"; style="background-image: url('Flagstaffsnow.jpg')"></li>
+            <li id="Pic2"; class="ui-state-default"; style="background-image: url('Flagmount.jpg')"></li>
+            <li id="Pic3"; class="ui-state-default" style="background-image: url('snowbowl.jpg')"></li>
+            <li id="Pic4"; class="ui-state-default"style="background-image: url('City.jpg')" ></li>
+            <li id="Pic5"; class="ui-state-default" style="background-image: url('Sign.jpg')"></li>
+            <li id="Pic6"; class="ui-state-default" style="background-image: url('GrandCanyon.jpg')"></li>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="Viscenter"> <b>FLAGSTAFF VISTOR CENTER
+
+            
+                <ul>One E. Route 66 <br> Flagstaff, Az 86001 <br> U.S. 001.928.213.2951</ul>
+                <ul>VisitorCenter@flagstaffaz.gov</ul>
+        </div>
+
+        <div class="flag365"><b>FLAGSTAFF 365 HAPPENINGS
+
+            <ul>Find Local events for the<br> upcoming week with Flagstaff <br> 365! Happenings!</ul>
+
+          <form>
+            <input type="email" id="Email" name="Email" placeholder="email address" title="We ask for your email for feedback"></p>
+            <input type="submit" value="Submit" id="sub">
+        </form>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104352.46882092727!2d-111.67799886548927!3d35.181187390308736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8ef7da2e2631%3A0x8e1f3ca1cedbb300!2sFlagstaff%2C%20AZ!5e0!3m2!1sen!2sus!4v1670546484069!5m2!1sen!2sus" width="323px" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+</body>
+</html>

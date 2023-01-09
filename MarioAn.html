@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walking</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        body{
+            background-image: url('mario.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        
+        .Mario{
+            background-image: url("marioooo.png");
+            width:60px;
+            height:100px;
+           
+            
+   
+            animation: guy 1s steps(5)  infinite, walk 5s linear infinite;
+     
+            margin-left: 1300px;
+            margin-top:687px;
+            position:absolute;
+
+            
+            
+        }
+
+           
+        
+
+        @keyframes guy{
+            0%{background-position: -100px ;}
+            100%{background-position: 3000px;}
+        }
+
+        @keyframes walk{
+            0%{transform: translateX(-100px);
+               
+            
+            }
+
+            50%{transform: translateX(-500px);}
+            100%{transform: translateX(-100px)}
+        }
+
+    
+        
+    </style>
+</head>
+<body>
+    
+    <div class="Mario"></div>
+
+
+    
+   
+</body>
+</html>

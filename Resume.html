@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <script src="https://kit.fontawesome.com/0688046d0b.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        body{
+            background-color: black;
+        }
+        #Lside{
+            background-color: #ABB3B5;
+            height: 1000px;
+            width: 600px;
+            margin-left: 20px;
+            position: absolute;
+            box-shadow: 1px 5px 5px 3px black;
+            
+        }
+
+        #Rside{
+            background-color: #E2E2E2;
+            height: 1000px;
+            width: 900px;
+            margin-left: 570px;
+            position: absolute;
+            margin-right: 20px;
+            box-shadow: 1px 5px 5px 3px black;
+        }
+
+        #fLside{
+            position: absolute;
+            background-color: #2D3537;
+            height: 900px;
+            width: 400px;
+            margin-top: 40px;
+            margin-left: 200px;
+            box-shadow: 1px 5px 5px 3px black;
+        }
+        
+        #fRside{
+            position: absolute;
+            background-color: #FFFFFF;
+            height: 900px;
+            width: 700px;
+            margin-top: 40px;
+            margin-left: 600px;
+            box-shadow: 1px 5px 5px 3px black;
+        }
+
+        #fside{
+            position: absolute;
+            background-color: #F6F6F6;
+            height: 200px;
+            width: 1100px;
+            margin-left: 200px;
+            margin-top: 110px;
+            box-shadow: 1px 5px 5px 3px black;
+        }
+
+        #pic{
+            position: absolute;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: gray;
+            width: 190px;
+            height: 180px;
+            float: left;
+            border-radius: 50%;
+            margin-left: 300px;
+            margin-top: 120px;
+            background-image: url('profilepic.png');
+            background-size: 220px;
+        }
+
+        #name{
+            position: absolute;
+            width: 500px;
+            height: 60px;
+            margin-top: 120px;
+            margin-left: 650px;
+            font-size: 30px;
+            letter-spacing: 5px;
+        }
+
+        #job{
+            position: absolute;
+            width: 500px;
+            height: 60px;
+            margin-top: 160px;
+            margin-left: 650px;
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+
+        #address{
+            
+            width: 120px;
+            height: 100px;
+            position: absolute;
+            margin-left: 680px;
+            margin-top: 200px;
+        }
+
+        #phone{
+            width: 120px;
+            height: 100px;
+            position: absolute;
+            margin-left: 680px;
+            margin-top: 250px;
+        }
+
+        #email{
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            margin-left: 880px;
+            margin-top: 200px; 
+        }
+
+        #school{
+            height: 100px;
+            position: absolute;
+            margin-left: 880px;
+            margin-top: 250px; 
+        }
+
+        #header{
+            position: absolute;
+            width: 400px;
+            height: 50px;
+            text-align: center;
+            margin: 200px;
+            margin-top: 320px;
+            font-size: 30px;
+            color: white;
+            letter-spacing: 5px;
+        }
+
+        #snapchat{
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            margin-left: 250px;
+            margin-top: 400px;
+            font-size: 20px;
+            color: white;
+        }
+
+        #insta{
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            margin-left: 250px;
+            margin-top: 450px;
+            font-size: 20px;
+            color: white;
+        }
+
+        #discord{
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            margin-left: 250px;
+            margin-top: 500px;
+            font-size: 20px;
+            color: white;
+        }
+
+        #tiktok{
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            margin-left: 250px;
+            margin-top: 550px;
+            font-size: 20px;
+            color: white;
+        }
+
+        #about{
+            position: absolute;
+            width: 300px;
+            font-size: 30px;
+            color: black;
+            margin-left: 800px;
+            margin-top: 280px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        #me{
+            position: absolute;
+            width: 600px;
+            font-size: 15px;
+            color: black;
+            margin-left: 630px;
+            margin-top: 330px;
+            
+        
+        }
+
+        #underline{
+            position: absolute;
+            width: 680px;
+            margin-left: 610px;
+            margin-top: 380px;
+            border-bottom: 6px solid black;
+            color: white;
+        }
+
+        #Work{
+            position: absolute;
+            width: 300px;
+            font-size: 30px;
+            color: black;
+            margin-left: 800px;
+            margin-top: 410px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        #experience{
+            position: absolute;
+            width: 600px;
+            font-size: 15px;
+            color: black;
+            margin-left: 630px;
+            margin-top: 460px;
+        }
+
+        #under{
+            position: absolute;
+            width: 680px;
+            margin-left: 610px;
+            margin-top: 510px;
+            border-bottom: 6px solid black;
+            color: white;
+        }
+
+        #education{
+            position: absolute;
+            width: 300px;
+            font-size: 30px;
+            color: black;
+            margin-left: 800px;
+            margin-top: 550px;
+            text-align: center;
+            text-decoration: underline;
+        
+        }
+
+        #edu{
+            position: absolute;
+            width: 600px;
+            font-size: 15px;
+            color: black;
+            margin-left: 657px;
+            margin-top: 620px;
+        }
+
+        #edu2{
+            position: absolute;
+            width: 600px;
+            font-size: 15px;
+            color: black;
+            margin-left: 1050px;
+            margin-top: 620px;
+        }
+
+        #un{
+            position: absolute;
+            width: 680px;
+            margin-left: 610px;
+            margin-top: 650px;
+            border-bottom: 6px solid black;
+            color: white;
+        }
+
+        #skill{
+            position: absolute;
+            width: 300px;
+            font-size: 30px;
+            color: black;
+            margin-left: 800px;
+            margin-top: 690px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        #skills{
+            position: absolute;
+            width: 600px;
+            font-size: 15px;
+            color: black;
+            margin-left: 680px;
+            margin-top: 730px;
+        }
+
+            #skills2{
+                position: absolute;
+            width: 600px;
+            font-size: 15px;
+            color: black;
+            margin-left: 1030px;
+            margin-top: 730px; 
+            }
+
+        
+    </style>
+
+
+</head>
+<body>
+    
+
+
+    <div class="Photoback">
+        <div id="Lside"></div>
+        <div id="Rside"></div>
+        <div id="fLside"></div>
+        <div id="fRside"></div>
+        <div id="fside"></div>
+        <div id="pic"></div>
+        <div id="name"><b>Johann Herrera</div>
+        <div id="job"><b>Coding</div>
+        <div id="address"><i class="fa-sharp fa-solid fa-location-dot"></i>  2531 S 90th Dr</div>
+        <div id="phone"><i class="fa-solid fa-phone"></i>  480-925-6561</div>
+        <div id="email"><i class="fa-solid fa-envelope"></i> jherre848@west-mec.org</div>
+        <div id="school"><i class="fa-solid fa-school"></i> West-Mec Central Campus</div>
+        <div id="header"> Socials</div>
+        <div id="snapchat"><i class="fa-brands fa-snapchat"></i> johannh_13</div>
+        <div id="insta"><i class="fa-brands fa-instagram"></i> johannh335</div>
+        <div id="discord"><i class="fa-brands fa-discord"></i> woogish #7745</div>
+        <div id="tiktok"><i class="fa-brands fa-tiktok"></i> #user34352</div>
+        <div id="hede"> Socials</div>
+        <div id="hede"> Socials</div>
+        <div id="hede"> Socials</div>
+        <div id="about">About Me</div>
+        <div id="me"> My name is Johann Herrera and Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto alias eius dolorem adipisci ad vel error repellat ea itaque facere quaerat, quo nihil ab tempore fugiat, sed quasi voluptate neque?</div>
+        <div id="underline">.</div>
+        <div id="Work">Work Experience</div>
+        <div id="experience">I currently don't have work experience Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nisi hic doloremque mollitia eos aperiam cum ab perferendis magnam at voluptatum nam obcaecati ea, sit quos aspernatur tempore commodi laudantium?</div>
+        <div id="under">.</div>
+        <div id="education"> Education</div>
+        <div id="edu"> Tolleson Union High School <br> 2020-2024</div>
+        <div id="edu2">West-Mec Central Campus <br> 2022-2024</div>
+        <div id="un">.</div>
+        <div id="skill">Skills</div>
+        <div id="skills">
+            <ul>
+                <li>Teamwork</li>
+                <li>Communication Skills</li>
+                <li>Time Managment</li>
+                
+            </ul>
+        </div>
+        <div id="skills2">
+            <ul>
+                <li>Organization Skillz</li>
+                <li>Mathematics</li>
+                <li>Foreign Language</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
